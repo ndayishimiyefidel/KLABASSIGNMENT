@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<Html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klab form </title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input[type='text'] {
+            border-left: 0px;
+            border-right: 0px;
+            border-top: 0px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        input[type='text']:focus {
+            border-color: #25c16f;
+            outline: 0;
+            box-shadow: none;
+            border-bottom: solid 2px #25c16f;
+            margin-bottom: 0px;
+        }
+
+        .vertical {
+            border-left: 2px solid #ccc;
+            height: 300px;
+            position: absolute;
+            top: 30%;
+            left: 47%;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body class=" antialiased" style="background: #f2f2f2;">
+    <div class="flex w-full min-h-screen justify-center items-center">
+        <div class=" flex flex-col md:flex-row md:space-x-6 md:space-y-6 space-y-0 w-full max-w-4xl p-8 sm:p-12 rounded-xl shadow-lg  overflow-hidden"
+            style="color:#000; background: #fff;">
+
+            <div class="relative">
+                <div>
+                    <h2 class="font-bold text-3xl tracking-wide m-2" style="margin-left: 1cm;">Fill the form. <br> It's
+                        easy</h2>
+
+                </div>
+                <div class="absolute z-0 w-40 h-40 rounded-tl-lg"
+                    style="top:-1.3cm;right:-15.3cm;background: #5fe2aa;transform: rotate(-90deg);">
+                </div>
+                <div class="absolute z-0 w-40 h-40  -left-40 -bottom-12"
+                    style="background:#5fe2aa;transform: rotate(90deg);"></div>
+                <div class="relative z-10  rounded-xl shadow-lg p-8 text-cyan-900">
+                    <form action="" class="flex flex-col space-y-4 md:w-80">
+                        <div class="inline-grid grid-cols-2 gap-4">
+
+                            <div><input type="text" name="name" placeholder="First Name"
+                                    class="w-full  px-4 py-2  mt-2 outline-none" style="">
+                            </div>
+
+
+
+                            <div><input type="text" name="name" placeholder="Last Name"
+                                    class="w-full  px-4 py-2  mt-2 outline-none" style="">
+                            </div>
+
+                        </div>
+                        <div><input type="text" name="email" placeholder="Email Address"
+                                class="w-full  px-4 py-2 mt-2 outline-none"></div>
+
+                        <div>
+                            <p class="pt-4 pb-4 text-cyan-100 text-sm ">
+                                Briefly tells about yourproject and your current goals.<br>
+                                How can we help you ?
+                            </p>
+
+                            <input type="text" name="email" placeholder="" class="w-full  px-4 py-2 mt-2 outline-none">
+                        </div>
+
+                        <button
+                            class="inline-block self-end bg-cyan-700 text-white font-bold  px-6 py-2 uppercase text-sm"
+                            style="background-color: #f59b42;">send
+                            message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="vertical"></div>
+            <div class="flex space-y-8 flex-col justify-between">
+                <div class="" style="margin-top: 3cm;">
+                    <h3 class="font-bold text-2xl tracking-wide">Need Presentation ?</h3>
+                    <p class="pt-4 text-cyan-100">
+                        You like what we do, but you need to demostrate your team as well. Easy! Directly Download
+                        ,print or share the link to a PDF with your colleagues.
+                    </p>
+                </div>
+                <a hre="" class="mb-4" style="margin-top:-1.5cm;">
+                    <ion-icon name="cloud-download"></ion-icon> Company profile Pdf (32mb)
+                </a>
+                <div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</Html>
